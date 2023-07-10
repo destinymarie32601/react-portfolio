@@ -1,26 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './components/Header';
-import logo from './logo.svg';
+import Footer from './components/Footer';
+import Portfolio from './components/Portfolio';
+//import About from './components/About';
+//import Contact from './components/Contact';
+//import Resume from './components/Resume';
 import './App.css';
 
 function App() {
+  const [selectedSection, setSelectedSection] = useState('about');
+
+  const handleNavigationClick = (sectionId) => {
+    setSelectedSection(sectionId);
+  };
+    
+
   return (
     <div className="App">
-      <Header />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header onNavigationClick = {handleNavigationClick} />
+      {selectedSection === 'portfolio' && <Portfolio />}
+      <Footer />
     </div>
   );
 }

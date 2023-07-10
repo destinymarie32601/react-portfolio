@@ -1,21 +1,26 @@
 import React from 'react';
 
-const Navigation = () => {
+const Navigation = ({ onNavigationClick, selectedSection}) => {
+    const navigationItems = [
+        {id: 'about', title: 'About Me'},
+        {id: 'portfolio', title: 'Portfolio'},
+        {id: 'contact', title: 'Contact'},
+        {id: 'resume', title: 'Resume'},
+    ];
     return(
         <nav>
             <ul>
-                <li>
-                    <a href = "#about">About Me</a>
-                </li>
-                <li>
-                    <a href = "#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href = "#contact">Contact Me</a>
-                </li>
-                <li>
-                    <a href = "#resume">Resume</a>
-                </li>
+                {navigationItems.map((item) => (
+                    <li key = {item.id}>
+                        <a
+                        href={`#${item.id}`}
+                        className={selectedSection === item.id ? 'active' : ''}
+                        onClick={() => onNavigationClick(item.id)}
+                        >
+                            {item.title}
+                        </a>
+                    </li>
+                ))}
             </ul>
         </nav>
     );

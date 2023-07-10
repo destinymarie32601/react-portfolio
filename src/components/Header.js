@@ -2,11 +2,11 @@ import React from 'react';
 import Navigation from './Navigation';
 
 
-const Header = () => {
+const Header = ({onNavigationClick}) => {
     return(
         <header>
             <h1>Destiny Dardon</h1>
-            <Navigation />
+            <Navigation onNavigationClick={onNavigationClick}/>
         </header>
     );
 };
