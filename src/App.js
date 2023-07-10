@@ -6,7 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 //import About from './components/About';
 //import Contact from './components/Contact';
-//import Resume from './components/Resume';
+import Resume from './components/Resume';
 import './App.css';
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
       {selectedSection === 'about' && <About />}
       {selectedSection === 'portfolio' && <Portfolio />}
       {selectedSection === 'contact' && <Contact />}
+      {selectedSection === 'resume' && <Resume />}
 
       <Footer />
     </div>
