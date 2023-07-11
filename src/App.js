@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Contact from './components/Contact';
+import 'bootstrap/dist/css/bootstrap.min.css';
 //import About from './components/About';
 //import Contact from './components/Contact';
 import Resume from './components/Resume';
