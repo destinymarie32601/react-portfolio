@@ -1,35 +1,49 @@
 :root {
-  --color1: #E2F1AF; /* tea green */
-  --color2: #E3D888; /* flax */
-  --color3: #84714f; /* coyote */
-  --color4: #5A3A31; /* rose ebony */
-  --color5: #31231E; /* bistre */
-  --color6: #BCAA99; 
+  --color1: #E2F1AF;
+  /* tea green */
+  --color2: #E3D888;
+  /* flax */
+  --color3: #84714f;
+  /* coyote */
+  --color4: #5A3A31;
+  /* rose ebony */
+  --color5: #31231E;
+  /* bistre */
+  --color6: #BCAA99;
   --color7: #88665D;
   --color8: #FFEDDF;
   --color9: #F2F7F2;
   --color10: #D4D2D5;
   --color11: #ABC8C7;
+  --color12:#FCEFEF;
+  --color13: #A1FCDF;
+  --color14: #FCD29F;
+  --color15: #2D232E;
+  --color16: #F6C5AF;
+  --color17:#B3CBB9;
 }
 
 header {
-  background-color: var(--color7);
-  color: var(--color1)
+  background-color: var(--color17);
+  color: var(--color15);
+  z-index: 2;
 }
 
 nav ul {
-  list-style:none;
-  padding:0;
-  margin:0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-nav ul li{
-  display:inline-block;
+
+nav ul li {
+  display: inline-block;
 }
-nav ul li a{
+
+nav ul li a {
   text-decoration: none;
-  color: var(--color1);
+  color: var(--color15);
   font-weight: bold;
-  padding:20px;
+  padding: 20px;
 }
 
 .App {
@@ -37,94 +51,105 @@ nav ul li a{
   min-height: 100vh;
   flex-direction: column;
   text-align: center;
-  
+
 }
- .about {
+
+.about {
   position: relative;
-  background-color: var(--color7);
-  height:100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow:hidden;
- }
- .profile-container{
-  display:flex;
-  max-width:90%;
- }
+  overflow: hidden;
+}
 
- .profile-left{
-  display:flex;
+.profile-container {
+  display: flex;
+  max-width: 90%;
+}
+
+.profile-left {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right:20px;
- }
- .profile-right{
-  display:flex;
-  align-items:center;
- }
-.profile-title{
+  margin-right: 20px;
+}
+
+.profile-right {
   display: flex;
-  justify-content:center;
   align-items: center;
 }
-.profile-content{
-  display:flex;
+
+.profile-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.profile-content .swiper {
+  width: 300px;
+  height: 420px;
+  padding: 20px;
+  border-radius: 100px;
+}
+
+.profile-content .swiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color5);
+}
+
+.profile-content .swiper h1 {
+  font-size: 30px;
+}
+
+.profile-content .swiper-slide {
+  background-color: var(--color10);
+  border-radius: 45px;
+}
+
+.profile-title h2 {
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding:20px;
-}
-.profile-content p{
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  background-color: var(--color3);
   border-radius: 20px;
-  font-weight: normal;
-  height: 400px;
-  width: 750px;
-  margin:0;
-  padding:20px;
-  animation: background-color-animation 10s infinite;
-}
-.profile-title h2{
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  background-color: var(--color3);
-  border-radius: 20px;
-  font-weight: normal;
+  font-weight: bold;
   height: 100px;
-  width: 900px;
-  margin:0;
-  padding:20px;
-  animation: background-color-animation 5s infinite;
+  width: 700px;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--color12);
+  z-index: 2;
 }
+
+.lottie-animation {
+  position: fixed;
+  height:100vh;
+  width:100vw;
+  overflow: hidden;
+  transform: rotate(-90deg) scaleX(2.5) scaleY(8);
+  z-index:1;
+}
+
+
 .profile-image {
   display: flex;
   justify-content: flex-end;
   padding: 20px;
   max-width: 90%;
-  
+  z-index: 2;
 }
-.profile-image img{
-  width: 250px;
+
+.profile-image img {
+  width: 300px;
   height: 470px;
-  border-radius: 100px;
+  border-radius: 150px;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes background-color-animation {
-  0% {
-    background-color: var(--color3);
-  }
-  50% {
-    background-color: var(--color2);
-  }
-  100% {
-    background-color: var(--color6);
-  }
 }
