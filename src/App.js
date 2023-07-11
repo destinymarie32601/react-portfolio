@@ -7,7 +7,8 @@ import Contact from './components/Contact';
 //import About from './components/About';
 //import Contact from './components/Contact';
 import Resume from './components/Resume';
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css';
 
 function App() {
