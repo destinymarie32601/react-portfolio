@@ -66,9 +66,13 @@ const Contact = () => {
             name="contact"
             className='w-full h-screen bg-[#1e1b4b] text-[#c7d2fe] flex justify-center items-center p-4'
         >
-            <h2 className='text-[45px] lg:text-[100px] leading-none mb-12 pr-6'>
-                Let's work <br /> together!
+            <h2 className='text-[45px] lg:text-[100px] text-[#eef2ff] leading-none mb-12 pr-6'>
+                Let's work <br /> together! 
             </h2>
+            <div className='text-[45px] lg:text-[30px] leading-none mb-4 pr-6'>
+                Email: Destiny32601@gmail.com <br /> Cell: 704-807-2872
+
+            </div>
             <form className='flex-1 border rounded-2x1 flex flex-col gap-y-6 pb-24 p-6 items-start' onSubmit={handleSubmit}>
                 <input
                     className='bg-transparent border-b py-3 outline-none w-full
@@ -95,7 +99,7 @@ const Contact = () => {
                 <textarea
                     className='bg-transparent border-b py-12 outline-none w-full
             placeholder:text-white focus:border-accent resize-none mb-12'
-                    type='text'
+                    
                     name='message'
                     placeholder='Your Message'
                     value={message}
