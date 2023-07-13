@@ -11,29 +11,29 @@ export const Navigation = () => {
     };
 
     return(
-        <div className = "fixed w-full h-[80] flex justify-between items-center px-4 bg-[#0c131d] text-[#ffffffd6]">
+        <div className = "fixed w-full h-[80] flex justify-between items-center px-4 bg-[#1e1b4b] text-[#c7d2fe]">
             <div>
-                <img src={Logo} alt="" style={{width:"70px"}}/>
+                <img src={Logo} alt="" style={{width:"90px"}}/>
             </div>
             <div>
-                <ul className="hidden md:flex">
+                <ul className="hidden md:flex space-x-20">
                     <li>
-                        <Link activeClass='active' to="about" smooth={true} duration={500}>
+                        <Link activeClass='active' to="about" smooth={true} duration={500} className='text-xl'>
                             About
                         </Link>
                     </li>
                     <li>
-                        <Link activeClass='active' to="portfolio" smooth={true} duration={500}>
+                        <Link activeClass='active' to="portfolio" smooth={true} duration={500} className='text-xl'>
                             Portfolio
                         </Link>
                     </li>
                     <li>
-                        <Link activeClass='active' to="contact" smooth={true} duration={500}>
+                        <Link activeClass='active' to="contact" smooth={true} duration={500} className='text-xl'>
                             Contact
                         </Link>
                     </li>
                     <li>
-                        <Link activeClass='active' to="resume" smooth={true} duration={500}>
+                        <Link activeClass='active' to="resume" smooth={true} duration={500} className='text-xl'>
                             Resume
                         </Link>
                     </li>
