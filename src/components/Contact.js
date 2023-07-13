@@ -1,52 +1,39 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-function Contact() {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Name:', name);
-        console.log('Email:', email);
-        console.log('Message:', message);
-        //form submission logic here
-    };
-
-    return(
-        <section className="contact">
-            <h2>Contact Me</h2>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Name:</label>
-                <input 
-                type="text"
-                id="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-                />
-
-                <label htmlFor="email">Email:</label>
+const Contact = () => {
+    return (
+        <div
+            name="contact"
+            className='w-full h-screen bg-[#1e1b4b] text-[#c7d2fe] flex justify-center items-center p-4'
+        >
+            <h2 className='text-[45px] lg:text-[100px] leading-none mb-12'>
+                Let's work <br /> together!
+            </h2>
+            <form className='flex-1 border rounded-2x1 flex flex-col gap-y-6 pb-24 p-6 items-start'>
                 <input
-                type="email"
-                id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
+                    className='bg-transparent border-b py-3 outline-none w-full
+            placeholder:text-white focus:border-accent'
+                    type='text'
+                    placeholder='Your Name'
                 />
-
-                <label htmlFor="message">Message:</label>
+                <input
+                    className='bg-transparent border-b py-3 outline-none w-full
+            placeholder:text-white focus:border-accent '
+                    type='text'
+                    placeholder='Your Email'
+                />
                 <textarea
-                id="message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                required
+                    className='bg-transparent border-b py-12 outline-none w-full
+            placeholder:text-white focus:border-accent resize-none mb-12'
+                    type='text'
+                    placeholder='Your Message'
                 ></textarea>
-
-                <button type="submit">Submit</button>
+                <button className='btn btn-lg bg-[#ddd6fe] text-center rounded-lg px-5 py-5 text-[#2e1065] font-bold'>Send me a message</button>
             </form>
-        </section>
+
+        </div>
+
     );
-}
+};
 
 export default Contact;
