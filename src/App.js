@@ -1,32 +1,20 @@
-import React, {useState} from 'react';
-import Header from './components/Header';
 import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
-import About from './components/About';
+import {About} from './components/About';
 import Contact from './components/Contact';
-//import About from './components/About';
-//import Contact from './components/Contact';
+import { Navigation} from './components/Navigation';
 import Resume from './components/Resume';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-import './App.css';
+//react scroll 
 
 function App() {
-  const [selectedSection, setSelectedSection] = useState('about');
-
-  const handleNavigationClick = (sectionId) => {
-    setSelectedSection(sectionId);
-  };
-    
-
   return (
-    <div className="App">
-      <Header onNavigationClick = {handleNavigationClick} />
-      {selectedSection === 'about' && <About />}
-      {selectedSection === 'portfolio' && <Portfolio />}
-      {selectedSection === 'contact' && <Contact />}
-      {selectedSection === 'resume' && <Resume />}
-
+    <div>
+      <Navigation />
+      <About />
+      <Portfolio />
+      <Contact />
+      <Resume/>
       <Footer />
     </div>
   );
