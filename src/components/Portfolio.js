@@ -49,7 +49,7 @@ export const Portfolio = () => {
                         className='shadow-sm shadow-gray-200 group container rounded-md flex justify-center items-center mx-auto content-div'
                     >
                         <div className='text-center opacity-0 group-hover:opacity-100'>
-                            <p className='text-2x; font-bold tracking wider text-white'>
+                            <p className='text-2xl; font-bold tracking wider text-white'>
                                 Weather Dashboard
                             </p>
                             <a href="https://github.com/destinymarie32601/weather-dashboard">
@@ -151,7 +151,7 @@ export const Portfolio = () => {
                         className='shadow-sm shadow-gray-200 group container rounded-md flex justify-center items-center mx-auto content-div'
                     >
                         <div className='text-center opacity-0 group-hover:opacity-100'>
-                            <p className='text-2x; font-bold tracking wider text-black'>
+                            <p className='text-4x; font-bold tracking wider text-black'>
                                 Color Culture
                             </p>
                             <a href="https://github.com/destinymarie32601/color-culture">
