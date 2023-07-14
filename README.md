@@ -9,7 +9,7 @@ This project utilizes React, React Scroll and Tailwind.
 
 ## Website Links :
 Github Repo: https://github.com/destinymarie32601/react-portfolio
-Live Site: 
+Live Site: https://destinymarie32601.github.io/react-portfolio/
 
 ## Website Screenshots :
 ![Alt Text](/src/components/images/screenshot1.png);
