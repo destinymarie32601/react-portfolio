@@ -4,7 +4,7 @@ import feedme from './images/feedme.png';
 import weather from './images/weather.png';
 import notetaker from './images/notetaker.png';
 import cookbook from './images/cookbook.png';
-import colorc from './images/colorculture.png';
+import colorc from './images/colorc.png';
 
 export const Portfolio = () => {
     return (
@@ -162,7 +162,7 @@ export const Portfolio = () => {
                                     GitHub
                                 </button>
                             </a>
-                            <a href="https://nacho-mamas-cookbook.herokuapp.com/">
+                            <a href="https://agile-sands-25127-bd108b7da8b9.herokuapp.com/">
                                 <button
                                     link=""
                                     className="bg-[#ddd6fe] text-center rounded-lg px-4 py-3 text-[#2e1065] ml-2"
